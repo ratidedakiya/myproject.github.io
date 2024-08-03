@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugandan Food Delivery Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ugandan Food Delivery Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#daily-meal">Daily Meal Tracking</a></li>
+                <li><a href="#order-history">Order History</a></li>
+                <li><a href="#popular-dishes">Popular Dishes</a></li>
+                <li><a href="#loyalty-program">Loyalty Program</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="daily-meal">
+            <h2>Daily Meal Tracking</h2>
+            <div class="meal-log">
+                <label for="meal-type">Meal Type:</label>
+                <select id="meal-type">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                </select>
+                <label for="meal-description">Description:</label>
+                <input type="text" id="meal-description" placeholder="Describe your meal">
+                <button>Add Meal</button>
+            </div>
+        </section>
+
+        <section id="order-history">
+            <h2>Order History</h2>
+            <div class="order-list">
+                <!-- Order items will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="popular-dishes">
+            <h2>Popular Dishes</h2>
+            <div class="dish-list">
+                <!-- Popular dishes will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="loyalty-program">
+            <h2>Loyalty Program</h2>
+            <div class="loyalty-info">
+                <p>Points Earned: <span id="points">0</span></p>
+                <p>Next Reward: <span id="next-reward">100 points</span></p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="achievement-list">
+                <!-- Achievement badges will be dynamically added here -->
+            </div>
+        </section>
+        <section id="daily-dish">
+            <h2>Today's Ugandan Dish</h2>
+            <div id="dish-info">
+                <!-- Daily dish content will be dynamically added here -->
+            </div>
+        </section>
+        <section id="food-map">
+            <h2>Explore Ugandan Cuisine</h2>
+            <div id="map" style="height: 400px;"></div>
+        </section>
+        <section id="challenges">
+            <h2>Culinary Challenges</h2>
+            <div class="challenge-list">
+                <!-- Challenges will be dynamically added here -->
+            </div>
+        </section>
+        <section id="recommendations">
+            <h2>Recommended For You</h2>
+            <div class="recommendation-list">
+                <!-- Recommendations will be dynamically added here -->
+            </div>
+        </section>
+        <section id="social-sharing">
+            <h2>Share Your Meal</h2>
+            <div class="social-buttons">
+                <button onclick="shareOnFacebook()">Share on Facebook</button>
+                <button onclick="shareOnTwitter()">Share on Twitter</button>
+                <button onclick="shareOnInstagram()">Share on Instagram</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ugandan Food Delivery. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
